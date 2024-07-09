@@ -1,0 +1,283 @@
+body {
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+.bg-image {
+  background-image: url("images/hero-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  padding: 10px;
+  box-shadow: none;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s, backdrop-filter 0.3s;
+}
+
+.navbar-brand {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand i {
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 0.9rem;
+  margin-right: 20px; /* Reduced margin for smaller screens */
+  color: white;
+  position: relative;
+  transition: color 0.3s;
+  text-transform: capitalize;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: background-color 0.3s;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+  background-color: white;
+}
+
+.navbar-custom {
+  background-color: none;
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+  color: white;
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+  text-align: center; /* Center text for all screen sizes */
+}
+
+.text {
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  font-size: 4rem; /* Adjusted font size for larger screens */
+  font-weight: bold;
+  z-index: 2;
+  margin-bottom: 50px; /* Reduced margin for smaller screens */
+}
+
+.para {
+  color: white;
+  font-size: 1.5rem; /* Adjusted font size for larger screens */
+  z-index: 2;
+  max-width: 600px;
+  font-family: serif;
+  font-weight: normal;
+  margin: 0 auto; /* Center text for smaller screens */
+}
+
+.content-section {
+  padding: 50px 0;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.content-section .container {
+  max-width: 1000px;
+}
+
+.aboutus h2 {
+  color: white;
+}
+
+.aboutus p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.card {
+  border: none;
+  height: 300px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-icon {
+  font-size: 2rem;
+  color: #0c223a;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #0c223a;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.lead {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.row {
+  padding-top: 1.5rem;
+}
+
+#contact-us-section {
+  background-color: hsl(206, 34%, 20%);
+  color: white;
+  padding: 50px 0; /* Add padding to the entire section */
+}
+
+#contact-us-section .container {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+#contact-us-section .row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: left;
+  padding: 20px 0; /* Add padding between items */
+}
+
+#contact-us-section .col-lg-6 {
+  flex: 1;
+  text-align: left; /* Center align the text */
+}
+
+#contact-us-section .col-lg-6 h2,
+#contact-us-section .col-lg-6 p {
+  margin: 0;
+}
+
+#contact-us-section .col-lg-6 i {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+      background-color: rgba(218, 164, 148, 0.4); /* Adjust background color for mobile */
+  }
+
+  .navbar-nav .nav-link {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .text {
+      font-size: 2rem; /* Adjust text size for smaller screens */
+      margin-bottom: 30px; /* Adjusted margin for smaller screens */
+  }
+
+  .para {
+      font-size: 1.2rem; /* Adjusted font size for smaller screens */
+      max-width: 80%; /* Adjusted max-width for smaller screens */
+  }
+}
+
+.hide {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .hide {
+      display: none; /* Ensure navbar is hidden on smaller screens when scrolled */
+  }
+}
+.contact-item{
+  display: flex;
+  flex-direction: row;
+  
+}
+.logotext{
+  display: flex;
+  font-display: row;
+  
+  /* justify-content: space-between; */
+}
+.footer-logo{
+  font-size: 30px;
+  padding-right: 10px;
+}
+.footer p h2{
+  padding-top: 10px;
+  padding-right: 10px;
+  color: white;
+  text-align: start;
+}
+.footer h2{
+  text-align: left;
+  color: white;
+}
+.footer p{
+  font-size: 14px;
+}
+.website-details p, .bon-voyage p{
+  text-align: start;
+}
+.p{
+  text-align: start;
+}
+/* .contact-item .p{
+  line-height: 30px;
+} */

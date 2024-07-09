@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+img {
+    height: 250px;
+}
+
+.text-center {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(58, 58, 104);
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.col {
+    padding: 10px;
+    border: none;
+}
+
+.card {
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.shadow-custom {
+    box-shadow: 5px 5px 8px rgba(84, 84, 85, 0.5);
+    transition: transform 0.3s, box-shadow 0;
+}
+
+.card-img-top {
+    border-top-left-radius: 30px; /* Apply 50px border radius to top-left corner of the image */
+    border-top-right-radius: 30px; /* Apply 50px border radius to top-right corner of the image */
+}
+
+.col-md-2 {
+    width: 200px;
+}
+
+.card-title {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(58, 58, 104);
+}

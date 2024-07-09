@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spring Season</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="season.css">
+  <style>
+    .fullscreen-card {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      transition: all 0.5s ease-in-out;
+    }
+    .fullscreen-card img {
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">SPRING SEASON</h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+      <!-- Card 1 -->
+      <div class="col">
+        <div class="card shadow-custom bd" >
+          <a href="Gulmarg.html"><img src="./images/gulmarg.jpg" class="card-img-top" alt="Card Image"></a>
+          <div class="card-body">
+            <h4 class="card-title">Gulmarg</h4>
+            <p class="card-text">Gulmarg, often referred to as "Meadow of Flowers," is a stunning hill station in Jammu and Kashmir renowned for its lush green landscapes, pristine snow-covered slopes.</p>
+            <a href="Gulmarg.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col">
+        <div class="card shadow-custom">
+          <a href="Valleys_of_flowers.html"><img src="./images/Valleys_of_flowers.jpg" class="card-img-top" alt="Card Image"></a>
+          <div class="card-body">
+            <h4 class="card-title">Valley Of Flowers</h4>
+            <p class="card-text">The Valley of Flowers in Uttarakhand, India, a UNESCO World Heritage site, is famed for its vibrant alpine meadows, enchanting landscapes, and rich biodiversity.</p>
+            <a href="Valleys_of_flowers.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col">
+        <div class="card shadow-custom">
+          <a href="Mahabaleshwar.html"><img src="images/Mahabaleshwar1.jpg" class="card-img-top" alt="Card Image"></a>
+          <div class="card-body">
+            <h4 class="card-title">Mahabaleshwar</h4>
+            <p class="card-text">Mahabaleshwar, perched on the Sahyadri mountain range, captivates visitors with its lush greenery, strawberry farms, and panoramic viewpoints.</p>
+            <a href="Mahabaleshwar.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col">
+        <div class="card shadow-custom">
+          <a href="Wayanad.html"><img src="./images/Wayanad.jfif" class="card-img-top" alt="Card Image"></a>
+          <div class="card-body">
+            <h4 class="card-title">Wayanad</h4>
+            <p class="card-text">Wayanad, with its lush green landscapes and rich biodiversity, captivates visitors with its tranquil beauty and offers a serene retreat amidst nature's splendor.</p>
+            <a href="Wayanad.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col">
+        <div class="card shadow-custom">
+          <a href="Darjeeling.html"><img src="./images/Darjeeling.jpg" class="card-img-top" alt="Card Image"></a>
+          <div class="card-body">
+            <h4 class="card-title">Darjeeling</h4>
+            <p class="card-text">Darjeeling enchants with its misty hills, tea gardens, and panoramic views of Mount Kanchenjunga, making it a timeless destination for travelers.
+            </p>
+            <a href="Darjeeling.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function expandCard(card, url) {
+      card.classList.add('fullscreen-card');
+      setTimeout(() => {
+        window.location.href = url;
+      }, 500);
+    }
+  </script>
+</body>
+</html>

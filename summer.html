@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summer Season</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="season.css">
+  <style>
+    .fullscreen-card {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      transition: all 0.5s ease-in-out;
+    }
+    .fullscreen-card img {
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">SUMMER SEASON</h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+      <!-- Card 1 -->
+      <div class="col">
+        <div class="card shadow-custom">
+          <a href="Goa.html"><img src="./images/Goa.jpg" class="card-img-top" alt="Card Image"></a>
+          <div class="card-body">
+            <h4 class="card-title">Goa</h4>
+            <p class="card-text">
+              Goa's sun-kissed beaches, vibrant culture, and colonial heritage beckon travelers to unwind and enjoy its blend of Portuguese and Indian influences.</p>
+            <a href="Goa.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col">
+        <div class="card shadow-custom">
+          <a href="Ooty.html"><img src="./images/Ooty.webp" class="card-img-top" alt="Card Image"></a>
+          <div class="card-body">
+            <h4 class="card-title">Ooty</h4>
+            <p class="card-text">Nestled in the Nilgiri Hills, Ooty captivates with its lush tea gardens, cool climate, and colonial charm, making it a favored retreat for nature lovers and relaxation seekers alike.</p>
+            <a href="Ooty.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col">
+        <div class="card shadow-custom">
+          <a href="Yercaud.html"><img src="./images/Yercaud.jpg" class="card-img-top" alt="Card Image"></a>
+          <div class="card-body">
+            <h4 class="card-title">Yercaud</h4>
+            <p class="card-text">Yercaud, nestled in the Shevaroy Hills of Tamil Nadu, captivates visitors with its cool climate, lush greenery, and serene lakes, making it a perfect hill station.</p>
+            <a href="Yercaud.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col">
+        <div class="card shadow-custom">
+          <a href="Kinnaur.html"><img src="./images/Kinnaur.jpg" class="card-img-top" alt="Card Image"></a>
+          <div class="card-body">
+            <h4 class="card-title">Kinnaur</h4>
+            <p class="card-text">
+              Kinnaur, in northeastern Himachal Pradesh, mesmerizes with its rugged terrain, orchard-covered slopes, and ancient monasteries, showcasing untouched Himalayan beauty.</p>
+            <a href="Kinnaur.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col">
+        <div class="card shadow-custom bd" >
+          <a href="Shimla.html"><img src="./images/Shimla.jpg" class="card-img-top" alt="Card Image"></a>
+          <div class="card-body">
+            <h4 class="card-title">Shimla</h4>
+            <p class="card-text">Shimla, nestled in the foothills of the Himalayas, captivates with its colonial charm, scenic vistas, and crisp mountain air, making it a timeless retreat for visitors.</p>
+            <a href="Shimla.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function expandCard(card, url) {
+      card.classList.add('fullscreen-card');
+      setTimeout(() => {
+        window.location.href = url;
+      }, 500);
+    }
+  </script>
+</body>
+</html>

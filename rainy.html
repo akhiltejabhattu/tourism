@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rainy Season</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="season.css">
+  <style>
+    .fullscreen-card {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      transition: all 0.5s ease-in-out;
+    }
+    .fullscreen-card img {
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">RAINY SEASON</h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+      <!-- Card 1 -->
+      <div class="col">
+        <div class="card shadow-custom bd" >
+          <a href="Munnar.html"><img src="./images/Munnar.jpg" class="card-img-top" alt="Card Image"></a>
+          <div class="card-body">
+            <h4 class="card-title">Munnar</h4>
+            <p class="card-text">Munnar, nestled in the Western Ghats of Kerala, is renowned for its lush tea plantations, cool climate, and breathtaking vistas of rolling hills.</p>
+            <a href="Munnar.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col">
+        <div class="card shadow-custom">
+          <a href="Lonavala.html"><img src="./images/Lonavala.jpg" class="card-img-top" alt="Card Image"></a>
+          <div class="card-body">
+            <h4 class="card-title">Lonavala</h4>
+            <p class="card-text">Nestled amidst the lush greenery of the Western Ghats, Lonavala is renowned for its serene landscapes, cascading waterfalls, and tranquil hilltop views.</p>
+            <a href="Lonavala.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col">
+        <div class="card shadow-custom">
+          <a href="Cherrapunjee.html"><img src="./images/Chirapunji(Meghalya).jpg" class="card-img-top" alt="Card Image"></a>
+          <div class="card-body">
+            <h4 class="card-title">Cherrapunjee</h4>
+            <p class="card-text">Cherrapunjee, located in Meghalaya, India, is renowned as one of the wettest places on Earth, famous for its exceptionally high rainfall and lush green landscapes.</p>
+            <a href="Cherrapunjee.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col">
+        <div class="card shadow-custom">
+          <a href="Coorg.html"><img src="./images/coorg.webp" class="card-img-top" alt="Card Image"></a>
+          <div class="card-body">
+            <h4 class="card-title">Coorg</h4>
+            <p class="card-text">Coorg, nestled in the Western Ghats of Karnataka, India, is renowned for its lush greenery, coffee plantations, and rich cultural heritage.</p>
+            <a href="Coorg.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col">
+        <div class="card shadow-custom">
+          <a href="Pondicherry.html"><img src="./images/Pondicherry.jpeg" class="card-img-top" alt="Card Image"></a>
+          <div class="card-body">
+            <h4 class="card-title">Pondicherry</h4>
+            <p class="card-text">Pondicherry, now known as Puducherry, is a charming coastal town in India known for its French colonial architecture, vibrant culture, and serene beaches.</p>
+            <a href="Pondicherry.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function expandCard(card, url) {
+      card.classList.add('fullscreen-card');
+      setTimeout(() => {
+        window.location.href = url;
+      }, 500);
+    }
+  </script>
+</body>
+</html>

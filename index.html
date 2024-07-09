@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bon Voyage</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Gwendolyn:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-custom{
+            background-color: transparent;
+            border-bottom: 0.8px solid rgba(255, 255, 255, 0.2); /* Add a horizontal line */
+        }
+        .navbar-custom .nav-link,
+        .navbar-custom .navbar-brand{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-plane-departure"></i> BON VOYAGE
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link clr" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link clr" href="login.html">LOGIN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link clr" href="register.html">SIGN UP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link clr" href="#about-us-section">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link clr" href="#contact-us-section">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="home" class="main-content">
+        <div class="bg-image">
+            <div class="overlay"></div>
+            <div class="text">TIME TO TRAVEL
+                    <!-- <p>
+                        Welcome to Bon Voyage! Explore our curated travel recommendations based on seasons and preferences. Let's make your travel experiences unforgettable.</p>
+                    </p> -->
+                    <p class="para">Travel through seasons, where every moment becomes a cherished memory.</p>
+                <!-- </div> -->
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about-us-section" class="content-section aboutus">
+        <div class="container">
+            <h2 class="text-center" style="color: #0859af;">About Us</h2>
+            <p class="lead text-center">Welcome to Bon Voyage! We are dedicated to providing you with curated travel recommendations based on seasons and preferences. Our mission is to help you discover new destinations and make your travel experiences memorable.</p>
+            <div class="row text-center">
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <h5 class="card-title">Tailored Travel Plans</h5>
+                            <p class="card-text">Get customized travel plans tailored to your preferences and interests. Make every trip unique and unforgettable.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h5 class="card-title">Destination Guides</h5>
+                            <p class="card-text">Explore our comprehensive guides to various destinations around the world. Find out the best places to visit, eat, and stay.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h5 class="card-title">Seasonal Gems</h5>
+                            <p class="card-text"> Discover top restaurants, iconic landmarks, and unique products tailored to each destination's seasonal charm.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div id="contact-us-section" class="content-section footer">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column: Bon Voyage Title -->
+                <div class="col-lg-4">
+                    <div class="bon-voyage">
+                        
+                            <div class="logotext">
+                                <i class="fa-solid fa-plane-departure footer-logo"></i> <h2>BONVOYAGE</h2>
+                            </div>
+                        
+                        <p style="color: white;">Explore curated travel experiences and destinations to make your journeys unforgettable.</p>
+                    </div>
+                </div>
+                
+                <!-- Middle Column: Contact Details -->
+                <div class="col-lg-4">
+                    <div class="contact-details">
+                        <h2>Contact Us</h2>
+                        <p class="p">Feel free to contact and reach us</p>
+                        <div class="contact-item">
+                            <i class="far fa-envelope"></i> <p>&nbsp&nbspEmail:support@bonvoyage.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>&nbsp&nbspPhone:+1-234-567-890</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>&nbsp&nbspAddress:123 Travel Lane, Adventure City</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Additional Website Details -->
+                <div class="col-lg-4">
+                    <div class="website-details">
+                        <h2>Explore More</h2>
+                        <p>Discover top-rated restaurants, hospitals, famous places, and local products for each destination.</p>
+                        <p>Explore seasonal travel recommendations tailored to your preferences and interests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

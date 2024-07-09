@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+img{
+    height: 250px;
+    /* width: 600px; */
+}
+.col{
+    padding: 10px;
+}
+.card{
+    background-color: #fff;
+}
+.card {
+    transition: transform 0.3s ease; /* Smooth zoom animation */
+  }
+  
+  .card:hover {
+    transform: scale(1.02); /* Zoom out slightly on hover */
+  }
+h1{
+  color: rgb(48, 4, 88);
+  font-family: serif;
+  padding-bottom: 1.2rem;
+}
+.shadow-custom {
+    box-shadow: 5px 5px 8px rgba(84, 84, 85, 0.5); /* Adjust color and opacity here */
+    border-radius: 30px;
+    transition: transform 0.3s, box-shadow 0
+  }
+  .card-img-top{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
